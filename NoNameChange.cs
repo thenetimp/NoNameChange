@@ -1,8 +1,3 @@
-using ConVar;
-using Facepunch;
-using Facepunch.Math;
-using UnityEngine;
-using Time = UnityEngine.Time;
 using System;
 using System.Collections.Generic;
 using Oxide.Core;
