@@ -4,7 +4,7 @@ using Oxide.Core;
 
 namespace Oxide.Plugins
 {
-  [Info("No Name Change", "thenetimp", "0.0.1")]
+  [Info("No Name Change", "thenetimp", "0.0.2")]
   [Description("Kicks people who change their game name from wipe to wipe")]
   class NoNameChange : RustPlugin
   {
@@ -22,7 +22,7 @@ namespace Oxide.Plugins
           if(player.Username != username)
           {
             Puts("Fail login");
-            return "Username changes mid wipe are not allowed.";
+            return "Username changes are not allowed. You must log in with username: " + player.Username;
           }
         }
       }
